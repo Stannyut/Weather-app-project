@@ -7,6 +7,13 @@
 
 body {
     background: #222;
+    color: #ebfffc;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .card {
