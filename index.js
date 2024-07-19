@@ -1,44 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="y.css">
-    <title>Document</title>
-</head>
-<body>
-
-    <h1>STANLEY'S WEATHER APP</h1>
-    
- <div class="card">
-    <div class="search">
-        <input type="text" placeholder="enter city name" spellcheck="false">
-        <button><img src="images/search.png" alt="Search"></button>
-    </div>
-    <div class="weather">
-        <img src="images/Rain.png" class="weather-icon" alt="Weather Icon">
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">Nairobi</h2>
-        <div class="details">
-            <div class="col">
-                <img src="images/humidity.png" alt="Humidity Icon">
-                <div>
-                    <p class='humidity'>50%</p>
-                    <p>Humidity</p>
-                </div>
-            </div>
-            <div class="col">
-                <img src="images/Wind.png" alt="Wind Icon">
-                <div>
-                    <p class='wind'>15 km/h</p>
-                    <p>Wind speed</p>
-                </div>
-            </div>
-        </div>
-    </div>
- </div>
-
- <script>
 document.addEventListener("DOMContentLoaded", function () {
     const apiKey = "3c3e6b496ea035d8d8fdfb0705822f2c";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
@@ -80,6 +39,3 @@ document.addEventListener("DOMContentLoaded", function () {
         checkWeather(searchBox.value);
     });
 });
- </script>   
-</body>
-</html>
